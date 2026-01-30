@@ -80,12 +80,45 @@ MyFlag=true
 
 Formato json
 
+
+#### 1. Código de usuario inválido (no cumple 8 alfanumérico)
+
+Formato json
+
+{
+  "code": 422,
+  "type": "Error",
+  "timestamp": 1763045191,
+  "details": "El código debe tener 8 caracteres alfanuméricos"
+}
+
+#### 🧪 2. Usuario ya está dentro de la biblioteca
+
 {
   "code": 401,
   "type": "Error",
   "timestamp": 1763045191,
-  "details": "Mensaje descriptivo"
+  "details": "El usuario ya está dentro de la biblioteca"
 }
+
+#### 🧪 3. Aforo máximo alcanzado (10 personas)
+
+{
+  "code": 401,
+  "type": "Error",
+  "timestamp": 1763045191,
+  "details": "Aforo máximo alcanzado"
+}
+
+#### 🧪 4. Usuario no existe al intentar salir
+
+{
+  "code": 404,
+  "type": "Error",
+  "timestamp": 1763045191,
+  "details": "El usuario no existe en la biblioteca"
+}
+
 
 ---
 
